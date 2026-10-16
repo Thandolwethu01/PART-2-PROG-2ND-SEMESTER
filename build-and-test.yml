@@ -27,3 +27,6 @@ jobs:
 
     - name: Run Unit Tests
       run: dotnet test --no-build --configuration Release --verbosity normal
+      git add .github/workflows/build-and-test.yml
+git commit -m "ci: add GitHub Actions workflow for build and unit tests"
+git push origin main
